@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#8b102d">
+<title>إلى نور ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700;900&display=swap');
+:root{--pink:#ff477e;--deep:#8b102d;--cream:#fff3f5}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:#fff;background:radial-gradient(circle at 50% 15%,#5b1735 0,#250d25 48%,#100817 100%);font-family:'Cairo',sans-serif;overflow-x:hidden;text-align:center}
+main{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px 18px 50px;position:relative;z-index:1}
+h1{font-family:'Amiri',serif;font-size:clamp(2.7rem,10vw,5rem);margin:0;color:#ffd7e1;text-shadow:0 0 22px #ff477e}
+.intro{max-width:650px;line-height:2;font-size:1.05rem;color:#ffe8ee;margin:12px auto 24px}
+.heart-wrap{position:relative;margin:14px auto 25px}
+#heart{border:0;background:linear-gradient(145deg,#ff668f,#d50945 65%,#9d0035);color:white;width:220px;height:190px;cursor:pointer;filter:drop-shadow(0 0 18px #ff477e);animation:heartbeat 1.35s infinite;position:relative;display:flex;align-items:center;justify-content:center;clip-path:path("M110 184 C92 166 5 108 5 55 C5 20 48 0 78 24 L110 52 L142 24 C172 0 215 20 215 55 C215 108 128 166 110 184 Z")}
+#heart span{font-weight:900;font-size:1.15rem;text-shadow:0 2px 6px #85002b;transform:translateY(-5px)}
+@keyframes heartbeat{0%,100%{transform:scale(1)}12%{transform:scale(1.08)}24%{transform:scale(1)}36%{transform:scale(1.12)}52%{transform:scale(1)}}
+.hint{color:#ffd8e3;font-size:.92rem}
+#surprise{display:none;max-width:760px;width:100%;animation:appear 1.2s ease both}
+@keyframes appear{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+.message{background:#ffffff12;border:1px solid #ffb6ca55;border-radius:24px;padding:24px 20px;backdrop-filter:blur(8px);line-height:2.2;color:#fff2f6;font-family:'Amiri',serif;font-size:1.28rem;box-shadow:0 10px 40px #0004}
+.message p{margin:8px 0}
+.signature{font-family:'Cairo',sans-serif;color:#ffc3d4;font-weight:700;font-size:1.05rem;margin-top:20px}
+#music{width:min(100%,560px);height:80px;border:0;border-radius:15px;margin:22px auto 8px}
+.note{font-size:.8rem;color:#f8bdce}
+#qr-area{margin:24px auto 0;padding:18px;background:#fff7f9;border-radius:22px;color:#7d1635;max-width:290px}
+#qr-area h3{margin:0 0 12px}
+#qrcode{display:flex;justify-content:center;align-items:center;min-height:190px}
+#qrcode canvas,#qrcode img{max-width:100%;height:auto!important}
+#qr-area p{font-size:.8rem;line-height:1.7}
+#saveQR{border:0;border-radius:25px;padding:10px 18px;background:#9d1744;color:white;font-family:inherit;font-weight:700;cursor:pointer}
+.flower{position:fixed;top:-45px;z-index:0;pointer-events:none;animation:fall linear forwards;filter:drop-shadow(0 2px 5px #ff9db8)}
+@keyframes fall{to{transform:translate3d(var(--drift),110vh,0) rotate(720deg);opacity:.1}}
+footer{margin-top:26px;color:#f5b8ca;font-size:.85rem}
+@media(max-width:420px){#heart{width:190px;height:165px}.message{font-size:1.13rem}}
+</style>
+</head>
+<body>
+<main>
+  <h1>إلى نور ❤️</h1>
+  <p class="intro">هناك مفاجأة صغيرة خبّأها لكِ قلبٌ يحبكِ كثيراً...<br>اقتربي واضغطي مطوّلاً على القلب الأحمر لتفتحيها 🌹</p>
+  <div class="heart-wrap" id="heartWrap">
+    <button id="heart" aria-label="اضغطي مطولاً لفتح المفاجأة"><span>هنا تئبريني</span></button>
+  </div>
+  <div class="hint" id="hint">اضغطي باستمرار لمدة ثانية واحدة ❤️</div>
+
+  <section id="surprise">
+    <h1>نور ❤️</h1>
+    <p class="intro">يا أجمل صدفة، ويا أحنّ قلب...</p>
+    <div class="message">
+      <p>نور يا نبض قلبي، يا حكايةً جميلة لا أملّ من قراءتها،</p>
+      <p>أنتِ الفرح حين يضيق العالم، والطمأنينة حين تتعب الأيام.</p>
+      <p>ضحكتكِ وردة، وصوتكِ موسيقى، ووجودكِ نعمة أحمد الله عليها.</p>
+      <p>لو كان للحب اسمٌ آخر لاخترت اسمكِ، ولو كان للورد عنوانٌ لكان قلبكِ.</p>
+      <p>أعدكِ أن أبقى بقربكِ، أشارككِ تفاصيل الحياة، وأختاركِ في كل مرة.</p>
+      <p>أحبكِ اليوم، وغداً، وكل يومٍ يحمل اسمكِ يا نور. 🌹</p>
+      <div class="signature">المخلص لكِ دائماً، حبيبكِ رحّال ❤️</div>
+    </div>
+    <iframe id="music" title="الأغنية إلى نور" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+    <div class="note">الأغنية تبدأ من 0:49 وتنتهي عند 2:09. قد يحتاج التشغيل إلى لمسة على زر التشغيل حسب إعدادات الهاتف.</div>
+    <div id="qr-area">
+      <h3>مفتاح المفاجأة لنور 💗</h3>
+      <div id="qrcode"></div>
+      <p>امسحي رمز القلب لفتح هذه المفاجأة على هاتفكِ 🌷</p>
+      <button id="saveQR">حفظ الباركود كصورة</button>
+    </div>
+  </section>
+  <footer>صُنعت بكل الحب من رحّال إلى نور 🌹</footer>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+const heart=document.getElementById('heart');
+const hint=document.getElementById('hint');
+const surprise=document.getElementById('surprise');
+const music=document.getElementById('music');
+let holdTimer=null, opened=false, startX=0;
+function beginHold(e){
+  if(opened)return;
+  if(e.type==='touchstart' && e.touches.length) startX=e.touches[0].clientX;
+  heart.style.animationPlayState='paused';
+  holdTimer=setTimeout(openSurprise,1050);
+}
+function cancelHold(){
+  if(holdTimer) clearTimeout(holdTimer);
+  holdTimer=null;
+  if(!opened) heart.style.animationPlayState='running';
+}
+function openSurprise(){
+  if(opened)return;
+  opened=true;
+  heart.style.animation='none';
+  document.getElementById('heartWrap').style.display='none';
+  hint.style.display='none';
+  surprise.style.display='block';
+  music.src='https://www.youtube-nocookie.com/embed/Zkm2_E1mfZQ?start=49&end=129&autoplay=1&rel=0';
+  makeQR();
+  window.scrollTo({top:0,behavior:'smooth'});
+  setInterval(makeFlower,330);
+}
+heart.addEventListener('mousedown',beginHold);
+heart.addEventListener('touchstart',beginHold,{passive:true});
+['mouseup','mouseleave','touchend','touchcancel'].forEach(ev=>heart.addEventListener(ev,cancelHold));
+heart.addEventListener('contextmenu',e=>e.preventDefault());
+function makeFlower(){
+  const f=document.createElement('div');f.className='flower';
+  f.textContent=['🌹','🌷','🌸','💗','🌺'][Math.floor(Math.random()*5)];
+  f.style.left=Math.random()*100+'vw';
+  f.style.fontSize=(18+Math.random()*22)+'px';
+  f.style.setProperty('--drift',(Math.random()*180-90)+'px');
+  f.style.animationDuration=(5+Math.random()*6)+'s';
+  document.body.appendChild(f);setTimeout(()=>f.remove(),11500);
+}
+let qrReady=false;
+function makeQR(){
+ const box=document.getElementById('qrcode');box.innerHTML='';
+ if(location.protocol==='file:'){
+   box.innerHTML='<span style="font-size:13px">سيظهر الرمز بعد نشر الموقع على GitHub Pages</span>';return;
+ }
+ if(typeof QRCode==='undefined'){box.textContent='تعذر تحميل مولّد الرمز. تحققي من الاتصال بالإنترنت.';return;}
+ new QRCode(box,{text:location.href.split('#')[0],width:190,height:190,colorDark:'#781535',colorLight:'#fff7f9',correctLevel:QRCode.CorrectLevel.H});
+ qrReady=true;
+ // قلب زخرفي حول الرمز مع إبقاء مربعات المسح واضحة
+ const deco=document.createElement('div');deco.textContent='🌹  💗  🌹';deco.style.cssText='font-size:17px;letter-spacing:5px;margin-top:5px';
+ box.appendChild(deco);
+}
+document.getElementById('saveQR').addEventListener('click',()=>{
+ const box=document.getElementById('qrcode');
+ const canvas=box.querySelector('canvas');
+ const img=box.querySelector('img');
+ let data=canvas?canvas.toDataURL('image/png'):img?img.src:null;
+ if(!data){alert('انشري الموقع أولاً على GitHub Pages ثم افتحيه واضغطي القلب.');return;}
+ const a=document.createElement('a');a.href=data;a.download='Noor-heart-QR.png';a.click();
+});
+</script>
+</body>
+</html>
